@@ -1,3 +1,3 @@
 import { add } from "@cashew/common";
 
-console.log(add(1, 2));
+console.log(add(1, 2, 5));

@@ -1,15 +1,29 @@
 {
   "name": "@cashew/common",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.ts",
   "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^10.3.2",
-    "typescript": "^2.9.1"
-  },
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch"
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{ts}",
+      "<rootDir>/src/**/?(*.)(spec|test).{ts}"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|ts)$"
+    ]
   }
 }
