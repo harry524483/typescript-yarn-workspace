@@ -1,0 +1,14 @@
+service: typescript-yarn-workspace
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+
+functions:
+  first-function:
+    handler: packages/server/src/index.default
+    events:
+      - http:
+          path: /
+          method: get

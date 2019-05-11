@@ -1,3 +1,10 @@
 import { add } from "@cashew/common";
 
-console.log(add(1, 2, 5));
+const handler = async () => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify(add(1, 2, 5))
+  };
+};
+
+export default handler;
