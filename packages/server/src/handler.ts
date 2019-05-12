@@ -1,6 +1,6 @@
 import { add } from "@cashew/common";
 
-const handler = async () => {
+const handler = () => {
   return {
     statusCode: 200,
     body: JSON.stringify(add(1, 2, 5))

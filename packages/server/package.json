@@ -7,6 +7,27 @@
     "@cashew/common": "1.0.0"
   },
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/handler.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{ts}",
+      "<rootDir>/src/**/?(*.)(spec|test).{ts}"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|ts)$"
+    ]
   }
 }

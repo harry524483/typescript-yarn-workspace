@@ -4,16 +4,23 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "deploy": "sls deploy"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/node": "^12.0.0",
+    "awesome-typescript-loader": "^5.2.1",
     "jest": "^22.4.2",
     "lerna": "^2.11.0",
     "serverless": "^1.42.2",
+    "serverless-webpack": "^5.3.0",
     "ts-jest": "^23.10.4",
+    "ts-loader": "^6.0.0",
     "ts-node": "^6.1.0",
-    "typescript": "^2.9.1"
+    "typescript": "^3.4.5",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   }
 }

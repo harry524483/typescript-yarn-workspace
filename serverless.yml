@@ -1,5 +1,8 @@
 service: typescript-yarn-workspace
 
+plugins:
+  - serverless-webpack
+
 provider:
   name: aws
   runtime: nodejs8.10
@@ -7,7 +10,7 @@ provider:
 
 functions:
   first-function:
-    handler: packages/server/src/index.default
+    handler: packages/server/src/handler.default
     events:
       - http:
           path: /

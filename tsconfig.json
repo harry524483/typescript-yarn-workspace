@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
     "sourceMap": true,
-    "removeComments": true,
     "strict": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
-  }
+    "noImplicitReturns": true
+  },
+  "lib": ["es5", "es6", "dom", "es2015"]
 }
