@@ -25,5 +25,8 @@
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|ts)$"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }

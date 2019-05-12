@@ -2,6 +2,11 @@ service: typescript-yarn-workspace
 
 plugins:
   - serverless-webpack
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    port: 4000
 
 provider:
   name: aws
