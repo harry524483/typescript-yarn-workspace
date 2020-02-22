@@ -1,0 +1,13 @@
+version: 0.2
+
+env:
+  variables:
+    ENVIRONMENT: "harry"
+phases:
+  install:
+    commands:
+      - echo $ENVIRONMENT
+      - yarn
+  build:
+    commands:
+      - yarn deploy
