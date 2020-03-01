@@ -9,7 +9,6 @@
     "start": "lerna run start",
     "test": "lerna run test",
     "deploy": "sls deploy",
-    "start:web": "lerna exec --scope web yarn start",
     "test:web": "lerna exec --scope web yarn test",
     "build:web": "lerna exec --scope web yarn build"
   },
