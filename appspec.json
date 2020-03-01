@@ -1,0 +1,16 @@
+{
+  "version": 0.0,
+  "Resources": [
+    {
+      "LambdaCodedeploy": {
+        "Type": "AWS::Lambda::Function",
+        "Properties": {
+          "Name": "ila-lambda-codedeploy",
+          "Alias": "CodeDeployVersion",
+          "CurrentVersion": "1",
+          "TargetVersion": "2"
+        }
+      }
+    }
+  ]
+}
