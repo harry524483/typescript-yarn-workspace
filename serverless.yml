@@ -16,7 +16,3 @@ provider:
 functions:
   first-function:
     handler: packages/server/src/handler.default
-    events:
-      - http:
-          path: /
-          method: get
